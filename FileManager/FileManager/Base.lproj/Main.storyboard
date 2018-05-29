@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7pj-Nh-vXt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New View Controller-->
+        <scene sceneID="ZVr-DE-grE">
+            <objects>
+                <viewController storyboardIdentifier="NewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7pj-Nh-vXt" customClass="NewViewController" customModule="FileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6Q-8f-Xxq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6z-uA-JaQ">
+                                <rect key="frame" x="130" y="111" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Folder"/>
+                                <connections>
+                                    <action selector="BtnCreateDirectoryWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="snH-kM-Wsp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u6-TX-dBu">
+                                <rect key="frame" x="130" y="55" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create File"/>
+                                <connections>
+                                    <action selector="btnCreateFileWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="Io9-Yj-Qky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RC-PN-V2e">
+                                <rect key="frame" x="130" y="174" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Copy File"/>
+                                <connections>
+                                    <action selector="btnCopyFileWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="ksj-2t-47G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Da-PM7">
+                                <rect key="frame" x="130" y="225" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move FILE"/>
+                                <connections>
+                                    <action selector="btnMoveFileWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="x15-27-heD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-eT-jB6">
+                                <rect key="frame" x="130" y="263" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="BtnRemoveWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="hoU-06-59T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-s5-XVq">
+                                <rect key="frame" x="130" y="301" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Write"/>
+                                <connections>
+                                    <action selector="BtnWriteWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="knB-Ow-ZhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZw-Dt-d0Q">
+                                <rect key="frame" x="130" y="339" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="BtnReadWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="Opr-TS-Kbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0S-Rc-SPj">
+                                <rect key="frame" x="124" y="371" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="contentsOfDirectory"/>
+                                <connections>
+                                    <action selector="btncontentsOfDirectoryClickedWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="Nai-JX-zbx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzH-uf-Qf4">
+                                <rect key="frame" x="138" y="409" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PemissionCheck"/>
+                                <connections>
+                                    <action selector="FilePermissionCheckedWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="2VZ-LA-hmB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIC-Bz-BBa">
+                                <rect key="frame" x="167" y="447" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Equality"/>
+                                <connections>
+                                    <action selector="btnEqualityCheckWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="zaG-DY-6sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiG-2o-cOa">
+                                <rect key="frame" x="153" y="485" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="File Is Exists"/>
+                                <connections>
+                                    <action selector="btnFileExistsOrNotWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="EPA-rV-Inx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p0B-Yx-ee7">
+                                <rect key="frame" x="307" y="593" width="68" height="74"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI1-vI-4Pd">
+                                <rect key="frame" x="123" y="523" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get image From Path"/>
+                                <connections>
+                                    <action selector="btnGetImageWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="o1L-uQ-aIu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-ai-IiZ">
+                                <rect key="frame" x="127" y="561" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Image To Path"/>
+                                <connections>
+                                    <action selector="btnSaveImagetoPathWithSender:" destination="7pj-Nh-vXt" eventType="touchUpInside" id="gXK-sy-SUG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p0B-Yx-ee7" firstAttribute="leading" secondItem="EEH-sa-Y1z" secondAttribute="leading" constant="307" id="9FM-T8-CT5"/>
+                            <constraint firstItem="p0B-Yx-ee7" firstAttribute="top" secondItem="EEH-sa-Y1z" secondAttribute="top" constant="573" id="Q9l-RP-qL4"/>
+                            <constraint firstAttribute="trailing" secondItem="p0B-Yx-ee7" secondAttribute="trailing" id="cxb-Tq-ZNM"/>
+                            <constraint firstItem="p0B-Yx-ee7" firstAttribute="bottom" secondItem="EEH-sa-Y1z" secondAttribute="bottom" id="hiG-Et-d89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EEH-sa-Y1z"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgview" destination="p0B-Yx-ee7" id="GEj-7j-qR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gnh-xK-mZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
